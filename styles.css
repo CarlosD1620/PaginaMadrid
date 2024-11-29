@@ -1,0 +1,107 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    padding: 0;
+    text-align: center;
+    color: white;
+
+
+    background-image: url('Fondo.jpeg'); /* Ruta de la imagen */
+    background-size: cover; /* Hace que la imagen cubra todo el fondo */
+    background-position: center; /* Centra la imagen en el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+footer {
+    margin-top: auto;
+}
+
+.contenedor {
+    display: none;
+    margin: 0 auto;
+    max-width: 600px;
+
+}
+
+.contenedor.visible {
+    display: block;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #0066cc;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px 20px;
+
+}
+
+button:hover {
+    background-color: #00509e;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    background-color: black;
+}
+
+ul, ol {
+    margin: 0 auto;
+    max-width: 300px;
+    text-align: left;
+}
+
+footer p {
+    font-size: 14px;
+}
+/*
+.recuadro {
+    border: 2px solid black; /* Borde de 2px de grosor y color negro */
+    padding: 20px; /* Espaciado interior (relleno) */
+    margin: 20px; /* Espaciado exterior */
+    width: 600px; /* Ancho del recuadro */
+    position: absolute; /* Permite ubicarlo en una posición específica */
+    top: 40%; /* Se desplaza 100px desde la parte superior de la página */
+    left: 15%; /* Lo coloca en el 50% de la anchura del contenedor */
+    height: 300px;
+    z-index: 10; 
+
+}
+*/

@@ -1,0 +1,115 @@
+<!DOCTYPE html><!-- define el tipo de documento-->
+<html lang="es"><!--indica en que idioma esta la pagina-->
+<head><!-- etiqueta que indica el inicio de la cabeza de la pagina es esencial para la configuracion de una pagina-->
+    <meta charset="utf-8"><!-- indica el teclado que utilizaremos-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--se utiliza en HTML para controlar cómo se visualiza una página web-->
+    <title>Menu Principal</title><!--indica el titulo de la pestaña-->
+    <link rel="stylesheet" href="styles.css"><!--indica que se utilizara una hoja de estilos y especifica el nombre del archivo de estilos-->
+</head><!--finaliza la cabeza de la pagina-->
+<body><!--indica el inicio del cuerpo de la pagina web-->
+    <header><!--indica el inicio del encabezado-->
+        <h1>Menu Principal</h1><!--etiqueta para encabezado nivel 1-->
+    </header><!--indica final del encabezado-->
+    <main><!--indica el inicio de la parte principal de lagina web-->
+        <div class="Imagen_inicio1" >
+
+            <img src="Logo.png" alt="Imagen sin fondo" width="300" height="300">
+        </div>
+        <div class="recuadro"></div>
+        <section id="inicio" class="contenedor visible"><!--se utiliza para agrupar contenido relacionado dentro de una pagina-->
+            <button onclick="mostrarSeccion('sesion1')">top 3 trofeos</button><!--crea un boton en la pagina, onclick inica que debe realizar una accion cuando se le de clic-->
+            <button onclick="mostrarSeccion('sesion2')">Mejores jugadores</button><!--crea un boton en la pagina, onclick inica que debe realizar una accion cuando se le de clic-->
+            <button onclick="mostrarSeccion('sesion3')">Datos claves sobre el Real Madrid</button><!--crea un boton en la pagina, onclick inica que debe realizar una accion cuando se le de clic-->
+            <button onclick="mostrarSeccion('sesion4')">Registro de Fans</button><!--crea un boton en la pagina, onclick inica que debe realizar una accion cuando se le de clic-->
+        </section><!--indica el final de la section--> 
+        <section id="sesion1" class="contenedor"><!--se utiliza para agrupar contenido relacionado dentro de una pagina-->
+            <h2>Sesión 1: Lista Ordenada</h2><!--etiqueta para encabezado nive2 -->
+            <ol><!--crear una lista ordenada-->
+                <li>Champions league</li><!-- elemento de la lista-->
+                <li>Liga España</li><!-- elemento de la lista-->
+                <li>Super copa de europa</li><!-- elemento de la lista-->
+            </ol><!--fin de la lista ordenada-->
+            <button onclick="mostrarSeccion('inicio')">Volver</button><!--crea un boton en la pagina, onclick inica que debe realizar una accion cuando se le de clic-->
+        </section><!--indica el final de la etiqueta section--> 
+        <section id="sesion2" class="contenedor"><!--se utiliza para agrupar contenido relacionado dentro de una pagina-->
+            <h2>Sesión 2: Lista Desordenada</h2><!--etiqueta para encabezado nive2 -->
+            <ul><!--crear una lista desordenada-->
+                <li>Vinicius Junior</li><!-- elemento de la lista-->
+                <li>Jude Bellingham</li><!-- elemento de la lista-->
+                <li>Rodrigo Goes</li><!-- elemento de la lista-->
+            </ul><!--fin de la lista desordenada-->
+            <button onclick="mostrarSeccion('inicio')">Volver</button><!--crea un boton en la pagina, onclick inica que debe realizar una accion cuando se le de clic-->
+        </section><!--indica el final de la etiqueta section-->
+        <section id="sesion3" class="contenedor"><!--se utiliza para agrupar contenido relacionado dentro de una pagina-->
+            <h2>Sesión 3: Tabla</h2><!--etiqueta para encabezado nive2 -->
+            <table><!--se utiliza para crear una tabla-->
+                <thead><!--se utiliza para agrupar el contenido de encabezado de una tabla-->
+                    <tr><!--define una fila-->
+                        <th>Aspecto</th><!--define una celda dentro del encabezado-->
+                        <th>Información</th><!--define una celda dentro del encabezado-->
+                        <th>Detalles</th><!--define una celda dentro del encabezado-->
+                    </tr><!--indica el final de la fila-->
+                </thead><!--indica el final del contenido del encabezado-->
+                <tbody><!--se utiliza para agrupar el cuerpo de una tabla-->
+                    <tr><!--define una fila-->
+                        <td>Fundación</td><!--define una celda de dato-->
+                        <td>6 de marzo de 1902</td><!--define una celda de dato-->
+                        <td>El club fue fundado en Madrid, España</td><!--define una celda de dato-->
+                    </tr><!--indica el final de la fila-->
+                    <tr><!--indica el inicio de la fila-->
+                        <td>Estadio</td><!--define una celda de dato-->
+                        <td>Santiago Bernabéu</td><!--define una celda de dato-->
+                        <td>Capacidad de 81,044 espectadores.</td><!--define una celda de dato-->
+                    </tr><!--indica el final de la fila-->
+                </tbody><!--indica el final del contenido del cuerpo de una tabla-->
+            </table><!--indica el final del la tabla-->
+            <button onclick="mostrarSeccion('inicio')">Volver</button><!--crea un boton en la pagina, onclick inica que debe realizar una accion cuando se le de clic-->
+        </section><!--indica el final de la etiquete section-->
+        <section id="sesion4" class="contenedor"><!--se utiliza para agrupar contenido relacionado dentro de una pagina-->
+            <h2>Sesión 4: Formulario</h2><!--etiqueta para encabezado nivel2 -->
+            <form><!--se utiliza para crear un formulario-->
+                <label for="nombre">Nombre:</label><!--se utiliza para definir una etiqueta de texto asociada aun elemento del formulario-->
+                <input id="nombre" name="nombre" type="text" required><!-- crear un campo interactivo con el cual el usuario puede ingresar datos-->
+                <label for="email">Correo Electrónico:</label><!--se utiliza para definir una etiqueta de texto asociada aun elemento del formulario-->
+                <input id="email" name="email" type="email" required><!-- crear un campo interactivo con el cual el usuario puede ingresar datos-->
+                <fieldset><!--permite agrupar varios elementos relacionados dentro de un formulario como casillas de verificacion-->
+                    <legend>Género:</legend><!--se utiliza para mostrar como un encabezado o título del grupo de campos-->
+                    <label><input name="genero" type="radio" value="masculino"> Masculino</label><!--muestra un campo de opción de radio -->
+                    <label><input name="genero" type="radio" value="femenino"> Femenino</label><!--muestra un campo de opción de radio -->
+                </fieldset><!--indica el final de fieldset-->
+                <label for="pais">País:</label><!--se utiliza para definir una etiqueta de texto asociada aun elemento del formulario-->
+                <select id="pais" name="pais"><!--se utiliza para crear un menu desplegable-->
+                    <option value="mx">México</option><!--define las opciones que aparecen en el menu desplegable-->
+                    <option value="us">Estados Unidos</option><!--define las opciones que aparecen en el menu desplegable-->
+                    <option value="es">España</option><!--define las opciones que aparecen en el menu desplegable-->
+                </select><!--indica el final del menu desplegable-->
+                <button type="submit">Enviar</button><!--crea un boton de tipo enviar-->
+            </form><!--indica el final del formulario-->
+            <button onclick="mostrarSeccion('inicio')">Volver</button><!--crea un boton en la pagina, onclick inica que debe realizar una accion cuando se le de clic-->
+        </section><!--indica el final de la section-->
+    </main><!--indica el final del main-->
+    <footer><!--se utliza para crear un pie de pagina-->
+        <p>&copy; 2024 Derechos Reservados</p><!--se utiliza para crear un parrafo-->
+    </footer><!--indica el final del pie de pagina-->
+    <script>/*se utiliza para incluir código JavaScript dentro de un documento*/ 
+        function mostrarSeccion(seccionId) {/* función se utiliza para mostrar y ocultar secciones de contenido en una página web*/
+            document.querySelectorAll('.contenedor').forEach((seccion) => {/*stá seleccionando todos los elementos en un documento HTML que tienen la clase .contenedor y luego itera sobre cada uno de esos elementos para ejecutar una función sobre ellos.*/
+                seccion.classList.remove('visible');/*se utiliza para eliminar la clase visible de un elemento en el DOM*/
+            });
+            document.getElementById(seccionId).classList.add('visible');/*Se utiliza para agregar la clase visible a un elemento HTML*/
+        }
+    </script><!--Indica el cierre de script-->
+</body><!-- indica el final del body-->
+</html><!--indica el final del html-->
+
+
+
+
+
+
+
+
+
+
+
+
